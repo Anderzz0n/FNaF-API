@@ -9,10 +9,10 @@ from rest_framework.reverse import reverse
 
 @api_view(['GET'])
 def api_root(request, format=None):
-    """Punto de entrada principal de la API de Five Nights at Freddy's."""
+    
     return Response({
-        'mensaje': '🎃 Bienvenido a la API de Five Nights at Freddy\'s',
-        'version': '1.0.0',
+        'mensaje': 'Bienvenido a la API de Five Nights at Freddy\'s',
+        
         'endpoints': {
             'personajes': reverse('personaje-list', request=request, format=format),
         },
