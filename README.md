@@ -1,10 +1,10 @@
 # 🎃 Five Nights at Freddy's API
 
-API REST desarrollada con **Django + Django REST Framework** para la gestión de personajes de la franquicia Five Nights at Freddy's.
+API REST desarrollada con **Django + Django REST Framework** para la gestión de personajes de Five Nights at Freddy's.
 
 ---
 
-## 🚀 Instalación
+##  Instalación
 
 ```bash
 # 1. Clonar el proyecto y entrar al directorio
@@ -32,7 +32,7 @@ La API queda disponible en: `http://localhost:8000/api/`
 
 ---
 
-## 📚 Endpoints
+## Endpoints
 
 | Método | Endpoint | Descripción |
 |--------|----------|-------------|
@@ -47,7 +47,7 @@ La API queda disponible en: `http://localhost:8000/api/`
 
 ---
 
-## 🔍 Filtros disponibles
+## Filtros disponibles
 
 ```
 GET /api/personajes/?nombre_personaje=freddy
@@ -60,7 +60,7 @@ GET /api/personajes/?rol=cantante
 
 ---
 
-## 🔀 Ordenamiento
+## Ordenamiento
 
 ```
 GET /api/personajes/?ordering=nombre_personaje       # A → Z
@@ -71,7 +71,7 @@ GET /api/personajes/?ordering=-juego_donde_sale
 
 ---
 
-## 📄 Paginación
+##  Paginación
 
 ```
 GET /api/personajes/                    # Página 1, 3 resultados (defecto)
@@ -97,7 +97,7 @@ GET /api/personajes/?page=2&page_size=5 # Página 2, 5 resultados
 
 ---
 
-## 🖼️ Gestión de imágenes
+## Gestión de imágenes
 
 ```bash
 # Subir imagen (multipart/form-data)
@@ -110,7 +110,7 @@ curl -X DELETE http://localhost:8000/api/personajes/1/imagen/
 
 ---
 
-## 📦 Estructura del proyecto
+## Estructura del proyecto
 
 ```
 fnaf_backend/
@@ -135,7 +135,7 @@ fnaf_backend/
 
 ---
 
-## 🧪 Ejemplo: Crear personaje con variantes
+##  Ejemplo: Crear personaje con variantes
 
 ```bash
 curl -X POST http://localhost:8000/api/personajes/ \
